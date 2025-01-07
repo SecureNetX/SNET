@@ -49,3 +49,23 @@ footer {
     color: white;
     padding: 10px 0;
 }
+
+#progress-container {
+    margin: 20px 0;
+    width: 80%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+}
+
+#progress-text {
+    margin-top: 10px;
+}

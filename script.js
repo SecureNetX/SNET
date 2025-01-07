@@ -19,4 +19,12 @@ document.getElementById('buyTokens').addEventListener('click', () => {
         return;
     }
     alert(`Du hast ${amount} Tokens gekauft! (Simulation)`);
+    
+    // Simulation des Fortschrittsbalkens (erhöht um 10%)
+    let progressBar = document.getElementById('progress-bar');
+    let progressText = document.getElementById('progress-text');
+    let currentWidth = parseFloat(progressBar.style.width) || 0;
+    let newWidth = Math.min(currentWidth + 10, 100);
+    progressBar.style.width = newWidth + '%';
+    progressText.innerText = `${newWidth}% des Ziels erreicht`;
 });
